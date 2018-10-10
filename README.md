@@ -19,7 +19,6 @@ Challenge Overview
 We want you to create a simple application in Swift with reduced functionality set. This means in detail:
 
  - login
- - list of offers
  - a detailed view of an offer
 
 Therefore we are granting you access to our API with the already created user. Please check your mail.
@@ -103,15 +102,14 @@ tasks:
 - login
 	 - create a login view with a form for login with username and password
 		 - on successful login redirect to the list offers view 
-- list offers
+- offers
 	 - get offers list from api
-	 - render each offer as a card with details you can find in the designs
-	 - on click 'ZEIG MIR DETAILS': go to offer details view
+	 - open first one from the list (or you can open randomly one from the list of offers)
 - show offer
-	 - get offer details from api
+	 - get offer details from API
 	 - render a detailed offer view with details you can find in the designs
 
 Make you comfortable: after reading all of this you may have questions. Think about it and try to solve it on your own. If there is a major fuckup (api is wrong, information missing etc.) contact your challenge contact person directly. If you are struggling with solving a task: write it down in a structured and understandable way and submit it to your challenge contact person.
 
-Guidelines: Would be great if we can see collection view (for shifts on offer detail) skills, and coding UI skills. Main focus is detail page, login and offer list are just the way to the details page.
+Guidelines: Would be great if we can see collection view (for shifts on offer detail page), and coding UI skills. Main focus is detail page, login and offer list are just the way to the details page.
 
