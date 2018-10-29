@@ -2,7 +2,7 @@ Welcome!
 ===================
 
 
-This is your frontend challenge as part of the Zenjob interview process. This repository should contain all necessary information to solve the tasks. As part of your challenge you will develop a iOS  **single page application** in **Swift** and an additional library set of your choice.
+This is your iOS app challenge as part of the Zenjob interview process. This repository should contain all necessary information to solve the tasks. As part of your challenge you will develop a iOS  **single page application** in **Swift** and an additional library set of your choice.
 
 ----------
 
@@ -111,4 +111,4 @@ tasks:
 
 Make you comfortable: after reading all of this you may have questions. Think about it and try to solve it on your own. If there is a major fuckup (api is wrong, information missing etc.) contact your challenge contact person directly. If you are struggling with solving a task: write it down in a structured and understandable way and submit it to your challenge contact person.
 
-Guidelines: Would be great if we can see collection and stack view's in use, and coding UI skills. Main focus is detail page, login and offer list are just the way to the details page.
+Guidelines: Would be great if we can see collection and stack view's in use, and coding UI skills (Don't use Storyboards). Main focus is detail page, login and offer list are just the way to the details page.
