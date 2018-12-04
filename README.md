@@ -2,7 +2,7 @@ Welcome!
 ===================
 
 
-This is your iOS app challenge as part of the Zenjob interview process. This repository should contain all necessary information to solve the tasks. As part of your challenge you will develop a iOS  **single page application** in **Swift** and an additional library set of your choice.
+This is your iOS app challenge as part of the Zenjob interview process. This repository should contain all necessary information to solve the tasks. As part of your challenge you will develop a iOS  **application** in **Swift** and an additional library set of your choice.
 
 ----------
 
