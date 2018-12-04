@@ -29,9 +29,9 @@ Important: We are securing the API calls with a JWT. No call except the login is
 API
 -------------
 
-- *baseUrl* (included in the mail): proceeding to all API calls
-- *user* (included in the mail): only valid user for login
-- *password* (included in the mail): password of the user
+- *baseUrl* https://staging-main.zenjob.org
+- *username* "mobile@zenjob.com" (this is only valid user for login)
+- *password* "becreative" (password of the user)
 - *token*: received in response body after successful login request
 
 ----------
