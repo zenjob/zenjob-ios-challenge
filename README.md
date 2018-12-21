@@ -96,7 +96,7 @@ After this wall of text, hopefully you are still super excited about the tasks d
 
 notes: 
  + The entrypoint of the application is the login view.
- + We grant you access to zeplin. Use the screens as orientation. The more similar your result is looking to the provided screens in zeplin the better.
+ + Design: The more similar your result is looking to the provided screen shots the better, but design implementation is not main focus.
 
 tasks:
 - login
