@@ -9,21 +9,43 @@ This is your iOS app challenge as part of the Zenjob interview process. This rep
 
 Background
 -------------
-Zenjob helps business customers to staff job positions rapidly with qualified employees. Based on the description (what, when, where, who) of the companies we are creating job offers for our workers. A worker has the possibility to accept or decline an offer. If he accepts, we match them to job.  If he declines, we continue to offer the job to other worker.
+Zenjob helps business customers to staff job positions rapidly with qualified employees. Based on the description (what, when, where, who) of the companies we are creating job offers for our talents. A talent has the possibility to accept or decline an offer. If he accepts, we match them to job.  If he declines, we continue to offer the job to other talent.
 
-Zenjob provides a mobile app to workers on Android and iOS. After login workers are able to see their offers, jobs and tasks. 
+Zenjob provides a mobile app for talents on Android and iOS. After login talents are able to see their offers, jobs and tasks. 
 
 Challenge Overview
 -------------
 
 We want you to create a simple application in Swift with reduced functionality set. This means in detail:
 
- - login
+ - list of available offers
  - a detailed view of an offer
 
 Therefore we are granting you access to our API with the already created user. Please check your mail.
 
 Important: We are securing the API calls with a JWT. No call except the login is authorized without a valid JWT (later more).  
+
+
+Tasks
+-------------
+
+notes: 
+ + The entrypoint of the application is the list of offers view.
+ + Design: The more similar your result is looking to the provided screen shots the better, but design implementation is not main focus.
+
+tasks:
+- login
+	 - on successful login redirect to the list offers view 
+- offers
+	 - get offers list from api
+	 - open first one from the list (or you can open randomly one from the list of offers)
+- show offer
+	 - get offer details from API
+	 - render a detailed offer view with details you can find in the designs (since the detail view is quite complex you don't have to implement all parts of it); it will be enough if you display some of the following subsections (Gehalt details/General details, Shifts, Ort/Place, Beschreibung/Description, Action buttons)
+
+Make you comfortable: after reading all of this you may have questions. Think about it and try to solve it on your own. If there is a major fuckup (api is wrong, information missing etc.) contact your challenge contact person directly. If you are struggling with solving a task: write it down in a structured and understandable way and submit it to your challenge contact person.
+
+Guidelines: Would be great if we can see collection and stack view's in use, and coding UI skills (Don't use Storyboards). Use given design screen shots as guideline. Also, for handling API requests and responses, if possible, use native components available from Foundation (URLRequest, Codable protocol...)
 
 
 API
@@ -87,28 +109,3 @@ API
 		 
 - example: {shifts: '1', instructions: 'true'
 - effect: creates a new job offer for the current logged in user (listable in offers request)
-
-
-Tasks
--------------
-
-After this wall of text, hopefully you are still super excited about the tasks details.
-
-notes: 
- + The entrypoint of the application is the login view.
- + Design: The more similar your result is looking to the provided screen shots the better, but design implementation is not main focus.
-
-tasks:
-- login
-	 - create a login view with a form for login with username and password
-		 - on successful login redirect to the list offers view 
-- offers
-	 - get offers list from api
-	 - open first one from the list (or you can open randomly one from the list of offers)
-- show offer
-	 - get offer details from API
-	 - render a detailed offer view with details you can find in the designs
-
-Make you comfortable: after reading all of this you may have questions. Think about it and try to solve it on your own. If there is a major fuckup (api is wrong, information missing etc.) contact your challenge contact person directly. If you are struggling with solving a task: write it down in a structured and understandable way and submit it to your challenge contact person.
-
-Guidelines: Would be great if we can see collection and stack view's in use, and coding UI skills (Don't use Storyboards). Main focus is detail page, login and offer list are just the way to the details page.  Design screen shots just use as guide line.
