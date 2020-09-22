@@ -37,7 +37,7 @@ class GetOffersTask: Operation {
                             UserDefaults.standard.set(total, forKey: "totalJobs")
                         }
                         
-                        if let jsonOffers = jsonObject?["offers"] {
+                        if let jsonOffers = jsonObject?["offer"] {
                             let data = try JSONSerialization.data(withJSONObject: jsonOffers, options: .init(rawValue: 0))
                             let offers = try decoder.decode([Offer].self, from: data)
                             completion(offers, nil)

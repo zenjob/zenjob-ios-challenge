@@ -10,7 +10,7 @@ import Foundation
 
 struct BreakType: Codable {
 
-  var minutes: Double?
-  var description: String?
+  var minutes: Double
+  var description: String
 
 }

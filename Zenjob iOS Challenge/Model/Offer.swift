@@ -14,8 +14,8 @@ struct Offer: Codable {
   var jobMatchUuid: String
   var jobCategoryKey: String
   var title: String
-  var description: String?
-  var instructions: String?
+  var description: String
+  var instructions: String
   var companyName: String
   var companyLogoUrl: String
   var minutesSum: String
@@ -26,5 +26,6 @@ struct Offer: Codable {
   var breakTypes: [BreakType]
   var shifts: [Shift]
   var pricingTables: [PricingTable]
+  var offerCategory: String
 
 }

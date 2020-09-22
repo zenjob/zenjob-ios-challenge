@@ -38,11 +38,10 @@ public class NetworkDispatcher: Dispatcher {
     var urlRequest = URLRequest(url: URL(string: url)!)
     urlRequest.cachePolicy = environment.cachePolicy
     urlRequest.httpMethod = request.method.rawValue
-    if let headers = request.headers {
-      for header in headers {
-        urlRequest.addValue(header.value as! String, forHTTPHeaderField: header.key)
-      }
+    for header in request.headers! {
+      urlRequest.addValue(header.value as! String, forHTTPHeaderField: header.key)
     }
+
 
     switch request.parameters {
     case .body(let params):
