@@ -111,6 +111,7 @@ Your tasks:
 - add unit test for one class by your choice
 - display appropriate message/view when there is no offers available
 - add UI test for one view by your choice
+- improve overall quality of the code
 
 
 Make you comfortable: after reading all of this you may have questions. Think about it and try to solve it on your own. If there is a major issue (API is wrong, doesn't work, information missing etc.) please reach to your contact person directly. If you are struggling with solving a task: write it down in a structured and understandable way and submit it to your challenge contact person.
