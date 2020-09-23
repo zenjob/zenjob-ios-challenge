@@ -25,6 +25,28 @@ Therefore we are granting you access to our API with the already created user.
 Important: We are securing the API calls with a JWT. No call except the login is authorized without a valid JWT (later more).  
 
 
+Tasks
+-------------
+
+notes: 
+ + The entrypoint of the application is the list of offers view.
+ + Design: The more similar your result is looking to the provided screen shots the better, but design implementation is not main focus.
+
+tasks:
+- login
+	 - on successful login redirect to the list offers view 
+- offers
+	 - get offers list from api
+	 - open first one from the list (or you can open randomly one from the list of offers)
+- show offer
+	 - get offer details from API
+	 - render a detailed offer view with details you can find in the designs (since the detail view is quite complex you don't have to implement all parts of it); it will be enough if you display some of the following subsections (Gehalt details/General details, Shifts, Ort/Place, Beschreibung/Description, Action buttons)
+
+Make you comfortable: after reading all of this you may have questions. Think about it and try to solve it on your own. If there is a major fuckup (api is wrong, information missing etc.) contact your challenge contact person directly. If you are struggling with solving a task: write it down in a structured and understandable way and submit it to your challenge contact person.
+
+Guidelines: Would be great if we can see collection and stack view's in use, and coding UI skills (Don't use Storyboards). Use given design screen shots as guideline. Also, for handling API requests and responses, if possible, use native components available from Foundation (URLRequest, Codable protocol...)
+
+
 API
 -------------
 
@@ -115,5 +137,4 @@ Your tasks:
 
 
 Make you comfortable: after reading all of this you may have questions. Think about it and try to solve it on your own. If there is a major issue (API is wrong, doesn't work, information missing etc.) please reach to your contact person directly. If you are struggling with solving a task: write it down in a structured and understandable way and submit it to your challenge contact person.
-
 
