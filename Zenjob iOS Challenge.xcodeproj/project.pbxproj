@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3285691B2519CCC9002A862A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285691A2519CCC9002A862A /* AppDelegate.swift */; };
+		3285691D2519CCC9002A862A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285691C2519CCC9002A862A /* SceneDelegate.swift */; };
+		328569222519CCC9002A862A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 328569202519CCC9002A862A /* Main.storyboard */; };
+		328569242519CCCB002A862A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328569232519CCCB002A862A /* Assets.xcassets */; };
+		328569272519CCCB002A862A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 328569252519CCCB002A862A /* LaunchScreen.storyboard */; };
+		328569322519CCCB002A862A /* Zenjob_iOS_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328569312519CCCB002A862A /* Zenjob_iOS_ChallengeTests.swift */; };
+		3285693D2519CCCB002A862A /* Zenjob_iOS_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285693C2519CCCB002A862A /* Zenjob_iOS_ChallengeUITests.swift */; };
+		3285694C2519D084002A862A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285694B2519D083002A862A /* Environment.swift */; };
+		3285694E2519D0E3002A862A /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285694D2519D0E3002A862A /* NetworkDispatcher.swift */; };
+		328569502519D120002A862A /* LoginTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285694F2519D120002A862A /* LoginTask.swift */; };
+		328569532519D157002A862A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328569512519D155002A862A /* Request.swift */; };
+		328569542519D157002A862A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328569522519D157002A862A /* Response.swift */; };
+		328569572519D1ED002A862A /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328569552519D1EC002A862A /* Dispatcher.swift */; };
+		328569582519D1ED002A862A /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328569562519D1ED002A862A /* Operation.swift */; };
+		3285695A2519D22C002A862A /* UserRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328569592519D22C002A862A /* UserRequests.swift */; };
+		328569622519D25D002A862A /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285695C2519D256002A862A /* Shift.swift */; };
+		328569632519D25D002A862A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285695D2519D257002A862A /* User.swift */; };
+		328569642519D25D002A862A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285695E2519D259002A862A /* Location.swift */; };
+		328569652519D25D002A862A /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285695F2519D25A002A862A /* Offer.swift */; };
+		328569662519D25D002A862A /* BreakType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328569602519D25C002A862A /* BreakType.swift */; };
+		328569672519D25D002A862A /* PricingTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328569612519D25D002A862A /* PricingTable.swift */; };
+		328569692519D5BE002A862A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328569682519D5BE002A862A /* TabBarController.swift */; };
+		3285696C2519D633002A862A /* OffersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285696B2519D633002A862A /* OffersViewController.swift */; };
+		3285696E2519D8B4002A862A /* GetOffersTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285696D2519D8B4002A862A /* GetOffersTask.swift */; };
+		328569702519D8DE002A862A /* OfferRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285696F2519D8DE002A862A /* OfferRequests.swift */; };
+		328569742519EB20002A862A /* ShiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328569712519EB1D002A862A /* ShiftCell.swift */; };
+		328569752519EB20002A862A /* SingleShiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328569722519EB1F002A862A /* SingleShiftCell.swift */; };
+		328569762519EB20002A862A /* MultipleShiftsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328569732519EB20002A862A /* MultipleShiftsCell.swift */; };
+		3285697C2519EB78002A862A /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328569772519EB72002A862A /* GeneralView.swift */; };
+		3285697E2519EB78002A862A /* MultipleShiftsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328569792519EB75002A862A /* MultipleShiftsView.swift */; };
+		3285697F2519EB78002A862A /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285697A2519EB77002A862A /* LocationView.swift */; };
+		328569802519EB78002A862A /* SingleShiftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285697B2519EB78002A862A /* SingleShiftView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3285692E2519CCCB002A862A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3285690F2519CCC9002A862A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 328569162519CCC9002A862A;
+			remoteInfo = "Zenjob iOS Challenge";
+		};
+		328569392519CCCB002A862A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3285690F2519CCC9002A862A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 328569162519CCC9002A862A;
+			remoteInfo = "Zenjob iOS Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		328569172519CCC9002A862A /* Zenjob iOS Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zenjob iOS Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3285691A2519CCC9002A862A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3285691C2519CCC9002A862A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		328569212519CCC9002A862A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		328569232519CCCB002A862A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		328569262519CCCB002A862A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		328569282519CCCB002A862A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3285692D2519CCCB002A862A /* Zenjob iOS ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zenjob iOS ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		328569312519CCCB002A862A /* Zenjob_iOS_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zenjob_iOS_ChallengeTests.swift; sourceTree = "<group>"; };
+		328569332519CCCB002A862A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		328569382519CCCB002A862A /* Zenjob iOS ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zenjob iOS ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3285693C2519CCCB002A862A /* Zenjob_iOS_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zenjob_iOS_ChallengeUITests.swift; sourceTree = "<group>"; };
+		3285693E2519CCCB002A862A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3285694B2519D083002A862A /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		3285694D2519D0E3002A862A /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		3285694F2519D120002A862A /* LoginTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTask.swift; sourceTree = "<group>"; };
+		328569512519D155002A862A /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		328569522519D157002A862A /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		328569552519D1EC002A862A /* Dispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		328569562519D1ED002A862A /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		328569592519D22C002A862A /* UserRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequests.swift; sourceTree = "<group>"; };
+		3285695C2519D256002A862A /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
+		3285695D2519D257002A862A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3285695E2519D259002A862A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		3285695F2519D25A002A862A /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		328569602519D25C002A862A /* BreakType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakType.swift; sourceTree = "<group>"; };
+		328569612519D25D002A862A /* PricingTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PricingTable.swift; sourceTree = "<group>"; };
+		328569682519D5BE002A862A /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		3285696B2519D633002A862A /* OffersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewController.swift; sourceTree = "<group>"; };
+		3285696D2519D8B4002A862A /* GetOffersTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOffersTask.swift; sourceTree = "<group>"; };
+		3285696F2519D8DE002A862A /* OfferRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferRequests.swift; sourceTree = "<group>"; };
+		328569712519EB1D002A862A /* ShiftCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftCell.swift; sourceTree = "<group>"; };
+		328569722519EB1F002A862A /* SingleShiftCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleShiftCell.swift; sourceTree = "<group>"; };
+		328569732519EB20002A862A /* MultipleShiftsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleShiftsCell.swift; sourceTree = "<group>"; };
+		328569772519EB72002A862A /* GeneralView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
+		328569792519EB75002A862A /* MultipleShiftsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleShiftsView.swift; sourceTree = "<group>"; };
+		3285697A2519EB77002A862A /* LocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		3285697B2519EB78002A862A /* SingleShiftView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleShiftView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		328569142519CCC9002A862A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3285692A2519CCCB002A862A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328569352519CCCB002A862A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3285690E2519CCC9002A862A = {
+			isa = PBXGroup;
+			children = (
+				328569192519CCC9002A862A /* Zenjob iOS Challenge */,
+				328569302519CCCB002A862A /* Zenjob iOS ChallengeTests */,
+				3285693B2519CCCB002A862A /* Zenjob iOS ChallengeUITests */,
+				328569182519CCC9002A862A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		328569182519CCC9002A862A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				328569172519CCC9002A862A /* Zenjob iOS Challenge.app */,
+				3285692D2519CCCB002A862A /* Zenjob iOS ChallengeTests.xctest */,
+				328569382519CCCB002A862A /* Zenjob iOS ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		328569192519CCC9002A862A /* Zenjob iOS Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				3285696A2519D5FB002A862A /* View Controllers */,
+				3285695B2519D231002A862A /* Model */,
+				3285694A2519D05E002A862A /* Network */,
+				3285691A2519CCC9002A862A /* AppDelegate.swift */,
+				3285691C2519CCC9002A862A /* SceneDelegate.swift */,
+				328569202519CCC9002A862A /* Main.storyboard */,
+				328569232519CCCB002A862A /* Assets.xcassets */,
+				328569252519CCCB002A862A /* LaunchScreen.storyboard */,
+				328569282519CCCB002A862A /* Info.plist */,
+			);
+			path = "Zenjob iOS Challenge";
+			sourceTree = "<group>";
+		};
+		328569302519CCCB002A862A /* Zenjob iOS ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				328569312519CCCB002A862A /* Zenjob_iOS_ChallengeTests.swift */,
+				328569332519CCCB002A862A /* Info.plist */,
+			);
+			path = "Zenjob iOS ChallengeTests";
+			sourceTree = "<group>";
+		};
+		3285693B2519CCCB002A862A /* Zenjob iOS ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3285693C2519CCCB002A862A /* Zenjob_iOS_ChallengeUITests.swift */,
+				3285693E2519CCCB002A862A /* Info.plist */,
+			);
+			path = "Zenjob iOS ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		3285694A2519D05E002A862A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3285694B2519D083002A862A /* Environment.swift */,
+				3285694D2519D0E3002A862A /* NetworkDispatcher.swift */,
+				3285694F2519D120002A862A /* LoginTask.swift */,
+				328569592519D22C002A862A /* UserRequests.swift */,
+				328569552519D1EC002A862A /* Dispatcher.swift */,
+				328569562519D1ED002A862A /* Operation.swift */,
+				328569512519D155002A862A /* Request.swift */,
+				328569522519D157002A862A /* Response.swift */,
+				3285696F2519D8DE002A862A /* OfferRequests.swift */,
+				3285696D2519D8B4002A862A /* GetOffersTask.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3285695B2519D231002A862A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				328569602519D25C002A862A /* BreakType.swift */,
+				3285695E2519D259002A862A /* Location.swift */,
+				3285695F2519D25A002A862A /* Offer.swift */,
+				328569612519D25D002A862A /* PricingTable.swift */,
+				3285695C2519D256002A862A /* Shift.swift */,
+				3285695D2519D257002A862A /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3285696A2519D5FB002A862A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				328569682519D5BE002A862A /* TabBarController.swift */,
+				3285696B2519D633002A862A /* OffersViewController.swift */,
+				328569732519EB20002A862A /* MultipleShiftsCell.swift */,
+				328569712519EB1D002A862A /* ShiftCell.swift */,
+				328569722519EB1F002A862A /* SingleShiftCell.swift */,
+				328569772519EB72002A862A /* GeneralView.swift */,
+				3285697A2519EB77002A862A /* LocationView.swift */,
+				328569792519EB75002A862A /* MultipleShiftsView.swift */,
+				3285697B2519EB78002A862A /* SingleShiftView.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		328569162519CCC9002A862A /* Zenjob iOS Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 328569412519CCCB002A862A /* Build configuration list for PBXNativeTarget "Zenjob iOS Challenge" */;
+			buildPhases = (
+				328569132519CCC9002A862A /* Sources */,
+				328569142519CCC9002A862A /* Frameworks */,
+				328569152519CCC9002A862A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zenjob iOS Challenge";
+			productName = "Zenjob iOS Challenge";
+			productReference = 328569172519CCC9002A862A /* Zenjob iOS Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3285692C2519CCCB002A862A /* Zenjob iOS ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 328569442519CCCB002A862A /* Build configuration list for PBXNativeTarget "Zenjob iOS ChallengeTests" */;
+			buildPhases = (
+				328569292519CCCB002A862A /* Sources */,
+				3285692A2519CCCB002A862A /* Frameworks */,
+				3285692B2519CCCB002A862A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3285692F2519CCCB002A862A /* PBXTargetDependency */,
+			);
+			name = "Zenjob iOS ChallengeTests";
+			productName = "Zenjob iOS ChallengeTests";
+			productReference = 3285692D2519CCCB002A862A /* Zenjob iOS ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		328569372519CCCB002A862A /* Zenjob iOS ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 328569472519CCCB002A862A /* Build configuration list for PBXNativeTarget "Zenjob iOS ChallengeUITests" */;
+			buildPhases = (
+				328569342519CCCB002A862A /* Sources */,
+				328569352519CCCB002A862A /* Frameworks */,
+				328569362519CCCB002A862A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3285693A2519CCCB002A862A /* PBXTargetDependency */,
+			);
+			name = "Zenjob iOS ChallengeUITests";
+			productName = "Zenjob iOS ChallengeUITests";
+			productReference = 328569382519CCCB002A862A /* Zenjob iOS ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3285690F2519CCC9002A862A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Zenjob;
+				TargetAttributes = {
+					328569162519CCC9002A862A = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					3285692C2519CCCB002A862A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 328569162519CCC9002A862A;
+					};
+					328569372519CCCB002A862A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 328569162519CCC9002A862A;
+					};
+				};
+			};
+			buildConfigurationList = 328569122519CCC9002A862A /* Build configuration list for PBXProject "Zenjob iOS Challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3285690E2519CCC9002A862A;
+			productRefGroup = 328569182519CCC9002A862A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				328569162519CCC9002A862A /* Zenjob iOS Challenge */,
+				3285692C2519CCCB002A862A /* Zenjob iOS ChallengeTests */,
+				328569372519CCCB002A862A /* Zenjob iOS ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		328569152519CCC9002A862A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328569272519CCCB002A862A /* LaunchScreen.storyboard in Resources */,
+				328569242519CCCB002A862A /* Assets.xcassets in Resources */,
+				328569222519CCC9002A862A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3285692B2519CCCB002A862A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328569362519CCCB002A862A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		328569132519CCC9002A862A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328569632519D25D002A862A /* User.swift in Sources */,
+				3285696E2519D8B4002A862A /* GetOffersTask.swift in Sources */,
+				328569662519D25D002A862A /* BreakType.swift in Sources */,
+				328569542519D157002A862A /* Response.swift in Sources */,
+				328569702519D8DE002A862A /* OfferRequests.swift in Sources */,
+				328569692519D5BE002A862A /* TabBarController.swift in Sources */,
+				328569752519EB20002A862A /* SingleShiftCell.swift in Sources */,
+				328569672519D25D002A862A /* PricingTable.swift in Sources */,
+				3285695A2519D22C002A862A /* UserRequests.swift in Sources */,
+				328569502519D120002A862A /* LoginTask.swift in Sources */,
+				3285697E2519EB78002A862A /* MultipleShiftsView.swift in Sources */,
+				328569742519EB20002A862A /* ShiftCell.swift in Sources */,
+				328569572519D1ED002A862A /* Dispatcher.swift in Sources */,
+				328569622519D25D002A862A /* Shift.swift in Sources */,
+				328569802519EB78002A862A /* SingleShiftView.swift in Sources */,
+				3285696C2519D633002A862A /* OffersViewController.swift in Sources */,
+				328569642519D25D002A862A /* Location.swift in Sources */,
+				328569582519D1ED002A862A /* Operation.swift in Sources */,
+				328569652519D25D002A862A /* Offer.swift in Sources */,
+				3285694C2519D084002A862A /* Environment.swift in Sources */,
+				3285691B2519CCC9002A862A /* AppDelegate.swift in Sources */,
+				328569532519D157002A862A /* Request.swift in Sources */,
+				3285694E2519D0E3002A862A /* NetworkDispatcher.swift in Sources */,
+				3285697C2519EB78002A862A /* GeneralView.swift in Sources */,
+				3285691D2519CCC9002A862A /* SceneDelegate.swift in Sources */,
+				3285697F2519EB78002A862A /* LocationView.swift in Sources */,
+				328569762519EB20002A862A /* MultipleShiftsCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328569292519CCCB002A862A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				328569322519CCCB002A862A /* Zenjob_iOS_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		328569342519CCCB002A862A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3285693D2519CCCB002A862A /* Zenjob_iOS_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3285692F2519CCCB002A862A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 328569162519CCC9002A862A /* Zenjob iOS Challenge */;
+			targetProxy = 3285692E2519CCCB002A862A /* PBXContainerItemProxy */;
+		};
+		3285693A2519CCCB002A862A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 328569162519CCC9002A862A /* Zenjob iOS Challenge */;
+			targetProxy = 328569392519CCCB002A862A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		328569202519CCC9002A862A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				328569212519CCC9002A862A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		328569252519CCCB002A862A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				328569262519CCCB002A862A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3285693F2519CCCB002A862A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		328569402519CCCB002A862A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		328569422519CCCB002A862A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FFQ4G39HPA;
+				INFOPLIST_FILE = "Zenjob iOS Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zenjob.challenge.Zenjob-iOS-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		328569432519CCCB002A862A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FFQ4G39HPA;
+				INFOPLIST_FILE = "Zenjob iOS Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zenjob.challenge.Zenjob-iOS-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		328569452519CCCB002A862A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FFQ4G39HPA;
+				INFOPLIST_FILE = "Zenjob iOS ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zenjob.challenge.Zenjob-iOS-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zenjob iOS Challenge.app/Zenjob iOS Challenge";
+			};
+			name = Debug;
+		};
+		328569462519CCCB002A862A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FFQ4G39HPA;
+				INFOPLIST_FILE = "Zenjob iOS ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zenjob.challenge.Zenjob-iOS-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zenjob iOS Challenge.app/Zenjob iOS Challenge";
+			};
+			name = Release;
+		};
+		328569482519CCCB002A862A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FFQ4G39HPA;
+				INFOPLIST_FILE = "Zenjob iOS ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zenjob.challenge.Zenjob-iOS-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Zenjob iOS Challenge";
+			};
+			name = Debug;
+		};
+		328569492519CCCB002A862A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FFQ4G39HPA;
+				INFOPLIST_FILE = "Zenjob iOS ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zenjob.challenge.Zenjob-iOS-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Zenjob iOS Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		328569122519CCC9002A862A /* Build configuration list for PBXProject "Zenjob iOS Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3285693F2519CCCB002A862A /* Debug */,
+				328569402519CCCB002A862A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		328569412519CCCB002A862A /* Build configuration list for PBXNativeTarget "Zenjob iOS Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				328569422519CCCB002A862A /* Debug */,
+				328569432519CCCB002A862A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		328569442519CCCB002A862A /* Build configuration list for PBXNativeTarget "Zenjob iOS ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				328569452519CCCB002A862A /* Debug */,
+				328569462519CCCB002A862A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		328569472519CCCB002A862A /* Build configuration list for PBXNativeTarget "Zenjob iOS ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				328569482519CCCB002A862A /* Debug */,
+				328569492519CCCB002A862A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3285690F2519CCC9002A862A /* Project object */;
+}
