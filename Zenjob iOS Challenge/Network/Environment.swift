@@ -17,7 +17,6 @@ public struct Environment {
 
   public init(_ name: String, host: String) {
     self.name = name
-    self.host = host
   }
 
 }
