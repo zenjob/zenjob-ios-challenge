@@ -51,8 +51,8 @@ API
 -------------
 
 - *baseUrl* https://staging-main.zenjob.org
-- *username* "mobile@zenjob.com" (this is only valid user for login)
-- *password* "becreative" (password of the user)
+- *username* "ios.challenge@zenjob.com" (this is only valid user for login)
+- *password* "12345678" (password of the user)
 - *token*: received in response body after successful login request
 
 ----------
