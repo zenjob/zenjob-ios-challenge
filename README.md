@@ -14,7 +14,7 @@ Zenjob helps business customers to staff job positions rapidly with qualified em
 Zenjob provides a mobile app for talents on Android and iOS. After login talents are able to see their offers, jobs and tasks. 
 
 Challenge Overview
--------------
+------------------
 
 We want you to update existing simple application in Swift with reduced functionality set. This means in detail:
 
@@ -72,20 +72,6 @@ API
 	- status: 200 OK
 	- body (json): (offer-200-response.json)
 
-----------	
-
- - SANDBOX create new offer - request
-	 - endpoint: /api/employee/v1/sandbox/offer
-	 - HTTP-method: POST
-	 - HTTP-header
-		 - Authorization: "Bearer {token}"
-		 - Content-Type: "application/json"
-	 - body (json):
-		 - shifts: number
-		 - instructions: boolean
-		 
-- example: {shifts: '1', instructions: 'true'
-- effect: creates a new job offer for the current logged in user (listable in offers request)
 
 
 Tasks
